@@ -6,9 +6,9 @@ For this project, you will use data cleaning and inferential statistics to produ
 
 ### The Data
 
-This project uses health data from the [CDC Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/data_documentation/index.htm). Specifically this subset of the data represents survey responses from the 2020-2021 in the state of New York. Each record represents a survey response.
+This project uses health data from the [CDC Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/data_documentation/index.htm). Specifically this subset of the data represents survey responses from the 2020-2021 survey in the state of New York. Each record represents a survey response.
 
-![tissues and tea mug](images/sick_day.jpg)
+![tissues and tea mug](https://raw.githubusercontent.com/learn-co-curriculum/da-phase3-project-enterprise/main/sick_day.jpg)
 
 Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -32,6 +32,7 @@ The reason for this is that **the survey was designed to use certain numbers as 
 
 The codebook gives us this information:
 
+```
 | Value  | Value Label          |
 | ------ | -------------------- |
 | 1 - 30 | Number of days       |
@@ -39,6 +40,7 @@ The codebook gives us this information:
 | 77     | Don't know/Not sure  |
 | 99     | Refused              |
 | BLANK  | Not asked or Missing |
+```
 
 Therefore you should prepare the data in `PHYSHLTH` by:
 
@@ -51,6 +53,7 @@ We are also interested in demographic features, such as the `RENTHOM1` question:
 
 Once again, this is represented somewhat confusingly in the data. The codebook tells us this:
 
+```
 | Value | Value Label          |
 | ----- | -------------------- |
 | 1     | Own                  |
@@ -59,6 +62,7 @@ Once again, this is represented somewhat confusingly in the data. The codebook t
 | 7     | Don't know/Not Sure  |
 | 9     | Refused              |
 | BLANK | Not asked or Missing |
+```
 
 Prepare the data by dropping records with values of `RENTHOM1` other than 1 or 2.
 
